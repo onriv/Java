@@ -20,11 +20,11 @@ public class FutureTest
 
       MatchCounter counter = new MatchCounter(new File(directory), keyword);
       FutureTask<Integer> task = new FutureTask<>(counter);
-      Thread t = new Thread(task);
+      Thread t = new Thread(task); // used as runnable
       t.start();
       try
       {
-         System.out.println(task.get() + " matching files.");
+         System.out.println(task.get() + " matching files."); // used as future
       }
       catch (ExecutionException e)
       {
@@ -69,8 +69,8 @@ class MatchCounter implements Callable<Integer>
             {
                MatchCounter counter = new MatchCounter(file, keyword);
                FutureTask<Integer> task = new FutureTask<>(counter);
-               results.add(task);
-               Thread t = new Thread(task);
+               results.add(task); // used as future
+               Thread t = new Thread(task); // used as runnable
                t.start();
             }
             else

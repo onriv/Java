@@ -7,6 +7,9 @@
       <sourceFolder url="file://$MODULE_DIR$/CoreJava/v1ch02/Welcome" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CoreJava/v1ch05" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CoreJava/v1ch11" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CoreJava/v1ch12" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CoreJava/v1ch14" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CoreJava/v2ch01" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

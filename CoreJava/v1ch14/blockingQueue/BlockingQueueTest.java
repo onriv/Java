@@ -25,8 +25,33 @@ public class BlockingQueueTest
 
       FileEnumerationTask enumerator = new FileEnumerationTask(queue, new File(directory));
       new Thread(enumerator).start();
+
+      /*
       for (int i = 1; i <= SEARCH_THREADS; i++)
          new Thread(new SearchTask(queue, keyword)).start();
+        */
+
+
+      boolean done = false;
+      while (!done)
+      {
+         File file = null;
+         try {
+            file = queue.take();
+             System.out.println(file.toString());
+         } catch (InterruptedException e) {
+            e.printStackTrace();
+         }
+         if (file == FileEnumerationTask.DUMMY)
+         {
+            try {
+               queue.put(file);
+            } catch (InterruptedException e) {
+               e.printStackTrace();
+            }
+            done = true;
+         }
+      }
    }
 }
 
