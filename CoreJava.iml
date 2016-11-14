@@ -10,8 +10,12 @@
       <sourceFolder url="file://$MODULE_DIR$/CoreJava/v1ch12" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CoreJava/v1ch14" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CoreJava/v2ch01" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CoreJava/v2ch03" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CoreJava/v1ch08" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CoreJava/v2ch10" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Java EE 6-Java EE 6" level="project" />
   </component>
 </module>
